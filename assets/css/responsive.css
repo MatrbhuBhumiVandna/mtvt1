@@ -1,1 +1,136 @@
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+    
+    .countdown-item {
+        margin: 0 10px;
+    }
+    
+    .countdown-item span:first-child {
+        font-size: 2.5rem;
+    }
 
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 15px 0;
+    }
+    
+    .highlight .nav-link {
+        display: inline-block;
+        padding: 10px 15px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .hero {
+        margin-top: 80px;
+        height: auto;
+        padding: 100px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .countdown-timer {
+        flex-wrap: wrap;
+    }
+    
+    .countdown-item {
+        margin: 10px;
+        min-width: 100px;
+    }
+    
+    .countdown-item span:first-child {
+        font-size: 2rem;
+    }
+    
+    .timeline::before {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item::after {
+        left: 21px;
+    }
+    
+    .event-article {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .countdown-item {
+        min-width: 70px;
+    }
+    
+    .countdown-item span:first-child {
+        font-size: 1.8rem;
+    }
+    
+    .countdown-item span:last-child {
+        font-size: 0.8rem;
+    }
+    
+    .patriots-gallery {
+        grid-template-columns: 1fr;
+    }
+}
