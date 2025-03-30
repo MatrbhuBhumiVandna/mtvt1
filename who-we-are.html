@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who We Are - Matru Bhumi Vandana Trust</title>
+    <meta name="description" content="Learn about the history and journey of Matru Bhumi Vandana Trust in Morbi, Gujarat">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Include -->
+    <div id="header-placeholder"></div>
 
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Who We Are</h1>
+                <p>Our Journey and Founding Principles</p>
+            </div>
+        </section>
+
+        <section class="who-we-are">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Our Foundation</h2>
+                    <p>Founded in 2017, Matru Bhumi Vandana Trust started with a dedicated team of nine visionaries, united by a common goal - to make Morbi proud by building the world's biggest Bharat Mata Temple and reviving the Gurukul/Vedic education system.</p>
+                    
+                    <h2>Our Journey</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2017</div>
+                            <div class="timeline-content">
+                                <h3>The Beginning</h3>
+                                <p>The trust was founded with a mission to construct a grand temple for Bharat Mata.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2019</div>
+                            <div class="timeline-content">
+                                <h3>First Major Event</h3>
+                                <p>Organized Janta Raja Natak, a historical play, to raise donations for the temple.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">Annual</div>
+                            <div class="timeline-content">
+                                <h3>March 23rd (Every Year)</h3>
+                                <p>Conduct special programs to honor the sacrifices of Indian patriots.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">Present & Future</div>
+                            <div class="timeline-content">
+                                <h3>Continuing Our Mission</h3>
+                                <p>Continuing our mission to spread Sanatan Dharma, Indian culture, and nationalism through the Bharat Mata Temple and Gurukul education system.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-statement">
+                        <p>Matru Bhumi Vandana Trust stands as a pillar of spirituality, nationalism, and social responsibility, working tirelessly to create a self-reliant and culturally strong India.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Include -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Donation Sticky Button -->
+    <div class="sticky-donate">
+        <a href="#" class="btn">Donate Now</a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Load header and footer
+        fetch('includes/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                // Initialize mobile menu after header is loaded
+                const navToggle = document.getElementById('navToggle');
+                const navMenu = document.getElementById('navMenu');
+                
+                if (navToggle && navMenu) {
+                    navToggle.addEventListener('click', () => {
+                        navMenu.classList.toggle('active');
+                        navToggle.innerHTML = navMenu.classList.contains('active') ? 
+                            '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+                    });
+                }
+            });
+        
+        fetch('includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
