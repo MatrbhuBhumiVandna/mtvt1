@@ -1,0 +1,24 @@
+root/
+├── index.html                 # Home page
+├── about.html                 # About Us page
+├── who-we-are.html            # Who We Are page
+├── events.html                # Upcoming Events page
+├── recent-events.html         # Recent Events page
+├── contact.html               # Contact Us page
+├── includes/
+│   ├── header.html            # Header partial
+│   └── footer.html            # Footer partial
+├── assets/
+│   ├── css/
+│   │   ├── style.css          # Main stylesheet
+│   │   └── responsive.css     # Responsive styles
+│   ├── js/
+│   │   ├── main.js            # Main JavaScript
+│   │   ├── countdown.js       # Countdown timer
+│   │   └── gallery.js         # Photo gallery JavaScript
+│   └── images/
+│       ├── logo.png           # Trust logo
+│       ├── patriots/          # Patriots images
+│       ├── events/            # Events images
+│       └── background.jpg     # Background image
+└── README.md                  # Project documentation
